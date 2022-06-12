@@ -40,3 +40,46 @@
     transform: rotate(360deg);
   }
 }
+
+.movie-back-drop:after {
+  background: linear-gradient(to right, rgba(31.5, 31.5, 31.5, 1) 150px, rgba(31.5, 31.5, 31.5, 0.84) 100%);
+  opacity: .9;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 3;
+
+
+
+}
+
+.ant-progress-text {
+  color: #fff !important;
+}
+
+.slider-area {
+  width: 90%;
+  margin:  20px auto;
+  margin-top: 3.25rem;
+  position: relative;
+}
+
+.ant-card-body {
+  padding: 10px;
+}
+
+.slick-dots-bottom .slick-active button {
+  background-color: red!important;
+}
+
+
+.slick-dots-bottom  {
+  bottom: -15px !important;
+}
+.slick-dots-bottom  button {
+  background-color: rgb(54, 51, 51)!important;
+}
