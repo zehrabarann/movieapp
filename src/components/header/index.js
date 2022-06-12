@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import { Col,Row, Input, Rate} from 'antd';
 import {ReactComponent as Logo} from "../../asset/logo.svg"
 // import test from "../../asset/logo.svg" imagler böyle import edilir

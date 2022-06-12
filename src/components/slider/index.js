@@ -4,7 +4,7 @@ import image2 from "../../asset/image2.jpeg"
 const Slider = () => {
     return (
         <>
-            <Carousel autoplay>
+            <Carousel>
                 <div>
                     <img src={image1} alt="wallpaper"/>
                 </div>
