@@ -4,10 +4,7 @@ import { ReactComponent as Logo } from "../../asset/logo.svg"
 import Search from '../search';
 // import test from "../../asset/logo.svg" imagler böyle import edilir
 
-const Header = (property) => {
-
-    
-
+const Header = () => {
 
     return (
         <>

@@ -5,10 +5,10 @@ import {
   Routes,
   Route,
 } from "react-router-dom";
-import Home from './components/home';
-import Detail from './components/detail';
-import NotFound from './components/404';
-import SearchResult from './components/searchResult';
+import Home from './pages/home';
+import Detail from './pages/detail';
+import NotFound from './pages/404';
+import SearchResult from './pages/searchResult';
 
 function App() {
   return (

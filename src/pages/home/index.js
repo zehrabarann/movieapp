@@ -1,9 +1,9 @@
-import Cards from "../cards"
-import Header from "../header"
-import PopularList from "../popularList"
-import Slider from "../slider"
+import Cards from "../../components/cards"
+import Header from "../../components/header"
+import PopularList from "../../components/popularList"
+import Slider from "../../components/slider"
 import { useEffect, useState } from 'react';
-import { access_token, baseUrl } from '../constant';
+import { access_token, baseUrl } from '../../constant';
 const axios = require('axios');
 
 const Home = () => {
@@ -36,7 +36,6 @@ const Home = () => {
             <Header />
             <Slider/>
             <Cards data={movieList} title="Vizyona Girecek Filmler"/>
-            {/* <TrendingList/> */}
             <PopularList/>
         </>
     )

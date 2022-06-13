@@ -1,12 +1,10 @@
 import { useState } from "react"
-import { Input, Card } from "antd"
+import { Input } from "antd"
 import axios from "axios"
-import { access_token, baseUrl, imageBaseUrl } from "../constant"
+import { access_token, baseUrl, imageBaseUrl } from "../../constant"
 import { Link } from "react-router-dom";
 import { CloseOutlined } from '@ant-design/icons'
 import { useNavigate } from "react-router-dom";
-
-const { Meta } = Card;
 
 const { Search } = Input
 

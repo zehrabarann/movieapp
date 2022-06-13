@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 import Cards from "../cards"
-import { access_token, baseUrl } from "../constant"
+import { access_token, baseUrl } from "../../constant"
 
 
 const PopularList = () => {

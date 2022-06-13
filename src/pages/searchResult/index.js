@@ -1,8 +1,8 @@
 import { Card } from 'antd';
 import { useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { imageBaseUrl } from '../constant';
-import Header from '../header';
+import { imageBaseUrl } from '../../constant';
+import Header from '../../components/header';
 
 
 const { Meta } = Card;
@@ -25,7 +25,7 @@ const SearchResult = (props) => {
                 {
                     state.searchResult.map((element) => {
                         return (
-                            <Link to={`detail/${element.id}`} key={element.id}>
+                            <Link to={`/detail/${element.id}`} key={element.id}>
                                 <Card
                                     hoverable className='w-full h-full'
                                     cover={<img alt="example" className='w-full h-full object-cover' src={imageBaseUrl + element.poster_path} />}

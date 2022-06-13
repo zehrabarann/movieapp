@@ -1,5 +1,5 @@
 import { Card } from 'antd';
-import { imageBaseUrl } from '../constant';
+import { imageBaseUrl } from '../../constant';
 import { Link } from 'react-router-dom';
 const { Meta } = Card;
 

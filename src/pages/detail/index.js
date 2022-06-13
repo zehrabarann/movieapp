@@ -1,10 +1,10 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import { access_token, baseUrl, imageBaseUrl } from '../constant';
+import { access_token, baseUrl, imageBaseUrl } from '../../constant';
 import { useNavigate, Link } from "react-router-dom";
 import { Row, Col, Spin, Progress, Card, Carousel} from 'antd';
-import Header from '../header';
+import Header from '../../components/header';
 import { ArrowLeftOutlined,ArrowRightOutlined } from '@ant-design/icons';
 
 const { Meta } = Card;
@@ -16,7 +16,6 @@ const Detail = () => {
     const [movie, setMovie] = useState({})
     const [loading, setLoading] = useState(true)
     const [similar, setSimilar] = useState([])
-    // /movie/id/similar?language=tr-TR
 
     const getMovieById = () => {
         axios.get(baseUrl + "/movie/" + id, {
@@ -93,7 +92,6 @@ const Detail = () => {
             </div>
         )
     }
-    console.log(similar)
     return (
         <>
             <div>
@@ -127,10 +125,6 @@ const Detail = () => {
                                     <h4 className='text-white' >Özet</h4>
                                     <p>{movie.overview}</p>
                                 </div>
-
-
-
-
 
                             </Col>
                         </Row>
