@@ -43,7 +43,7 @@ const SearchComponent = () => {
 
     return (
         <>
-            <div>
+            <div className="w-full"> 
                 <Search placeholder="input search text" className="w-full" onChange={onSearch} />
                 {searchResult.length !== 0 &&
                     <div className="search-result">

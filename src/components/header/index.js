@@ -11,20 +11,18 @@ const Header = (property) => {
 
     return (
         <>
-            <Row justify="center" className="p-4 bg-slate-200">
+            <Row justify="center" className="p-4  bg-[#032541]">
                 <Col span={4}>
-                    <Link to="/">
+                    <Link to="/" className='logo'>
                         <Logo />
                     </Link>
-
                     {/* <img src={test} alt="logo"/> */}
                 </Col>
-                <Col span={8}>
+                <Col span={12} className='flex items-center'>
                     <Search/>
-
                 </Col>
-                <Col span={4} className="flex justify-center">
-                    <Rate allowHalf defaultValue={5} />
+                <Col span={4} className="flex justify-center items-center text-white">
+                    <span>The Movie Database API</span>
                 </Col>
             </Row>
         </>

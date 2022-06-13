@@ -92,3 +92,8 @@
   background-color: #fff;
   padding: 5px;
 }
+
+.logo svg {
+  width: 100px;
+  height: 75px;
+}
