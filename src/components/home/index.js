@@ -1,7 +1,7 @@
 import Cards from "../cards"
 import Header from "../header"
+import PopularList from "../popularList"
 import Slider from "../slider"
-import TrendingList from "../trendingList"
 
 const Home = () => {
     return (
@@ -9,7 +9,8 @@ const Home = () => {
             <Header />
             <Slider/>
             <Cards/>
-            <TrendingList/>
+            {/* <TrendingList/> */}
+            <PopularList/>
         </>
     )
 

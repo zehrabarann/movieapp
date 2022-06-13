@@ -83,3 +83,12 @@
 .slick-dots-bottom  button {
   background-color: rgb(54, 51, 51)!important;
 }
+
+.search-result {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  float: left;
+  background-color: #fff;
+  padding: 5px;
+}
