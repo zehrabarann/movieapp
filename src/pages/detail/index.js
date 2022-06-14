@@ -54,12 +54,12 @@ const Detail = () => {
         }
     })
     const settings = {
-        dots:true,
+        dots: true,
         infinite:true,
         speed:500,
-        slidesToShow: 4.5,  
-        nextArrow: <SampleNextArrow />,
-        prevArrow: <SamplePrevArrow />,
+        slidesToShow: window.innerWidth > 600 ? 4.5: 2,  
+        nextArrow: window.innerWidth > 600 ? <SampleNextArrow /> : <></>,
+        prevArrow: window.innerWidth > 600 ? <SamplePrevArrow /> : <></>,
     }
 
     function SamplePrevArrow(props) {
@@ -98,15 +98,15 @@ const Detail = () => {
                 <Header />
                 <Row className='relative '>
                     <Col span={24} className='movie-back-drop' >
-                        <img src={imageBaseUrl + movie.backdrop_path} alt="backdrop_path" className='w-full h-[640px]' />
+                        <img src={imageBaseUrl + movie.backdrop_path} alt="backdrop_path" className='w-full h-[920px] sm:h-[640px]' />
                     </Col>
                     <Col span={24} className='absolute z-10'>
-                        <Row>
-                            <Col span={8} className='p-10'>
+                        <Row className='flex flex-col sm:flex-row'>
+                            <Col span={8} className='p-10  sm:p-5' xs={24} sm={8}>
                                 <img src={imageBaseUrl + movie.poster_path} alt="poster_path" className='w-full' />
                             </Col>
-                            <Col span={16} className='text-white p-10'>
-                                <h3 className='text-white text-2xl'>{movie.title}</h3>
+                            <Col span={16} className='text-white p-10 desc-area '>
+                                <h3 className='text-white text-2xl sm:text-sm'>{movie.title}</h3>
                                 <div className='my-4'>
                                     {movie.genres.map((element) => {
                                         return (
@@ -131,7 +131,7 @@ const Detail = () => {
                     </Col>
                 </Row>
                 <div className='slider-area w-full my-5 '>
-                    <h3>Benzer Filmler</h3>
+                    <h3 className='text-2xl font-bold mb-2'>Benzer Filmler</h3>
                     <Carousel {...settings}   arrows={true} draggable={true}>
                         {
                             similar.map((element) => {
@@ -139,8 +139,8 @@ const Detail = () => {
                                     <div key={element.id} className='h-[378px]'>
                                         <Link to={`detail/${element.id}`} >
                                             <Card
-                                                hoverable className='w-11/12 ml-5 h-full'
-                                                cover={<img alt="example" className='w-full min-w-[200px] h-[200px] object-cover' src={imageBaseUrl + element.poster_path} />}
+                                                hoverable className='w-11/12 h-full'
+                                                cover={<img alt="example" className='w-full min-w-[200px] h-[200px] object-cover slider-image' src={imageBaseUrl + element.poster_path} />}
                                             >
                                                 <Meta title={element.title} description={element.overview.slice(0, 150) +' ...'} />
 

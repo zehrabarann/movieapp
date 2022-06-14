@@ -9,7 +9,7 @@ const Cards = (props) => {
     if(props.data === undefined) {
         return(
             <div>
-                Data Not FOund
+                Data Not Found
             </div>
         )
     }
@@ -17,8 +17,8 @@ const Cards = (props) => {
     return (
         <>
             <div className='mt-10 '>
-                <h1 className='text-2xl font-bold'> {props.title}</h1>
-                <div className='mt-10  flex overflow-x-auto h-[450px] py-5'>
+                <h1 className='text-2xl font-bold ml-5'> {props.title}</h1>
+                <div className='mt-2  flex overflow-x-auto h-[450px] py-5 sm:mt-10'>
                     {
                         props.data.map((element) => {
                             return (
