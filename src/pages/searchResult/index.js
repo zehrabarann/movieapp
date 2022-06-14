@@ -21,7 +21,7 @@ const SearchResult = (props) => {
     return (
         <>
             <Header />
-            <div className='grid grid-cols-5 p-5 gap-6 my-5 sm:grid grid-cols-2 p-5 gap-6 my-5'>
+            <div className='grid sm:grid-cols-5 grid-cols-2 p-5 gap-6 my-5'>
                 {
                     state.searchResult.map((element) => {
                         return (

@@ -103,7 +103,7 @@ const Detail = () => {
                     <Col span={24} className='absolute z-10'>
                         <Row className='flex flex-col sm:flex-row'>
                             <Col span={8} className='p-10  sm:p-5' xs={24} sm={8}>
-                                <img src={imageBaseUrl + movie.poster_path} alt="poster_path" className='w-full' />
+                                <img src={imageBaseUrl + movie.poster_path} alt="poster_path" className='w-full max-w-[350px]' />
                             </Col>
                             <Col span={16} className='text-white p-10 desc-area '>
                                 <h3 className='text-white text-2xl sm:text-sm'>{movie.title}</h3>
